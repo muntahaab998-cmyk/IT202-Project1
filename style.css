@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #203044; background: #dce9f1 url('moving-background.svg') center center / cover fixed no-repeat; }
+.page { min-height: 100vh; padding: 28px 16px 18px; display: flex; flex-direction: column; align-items: center; }
+.brand { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; color: #fff; text-shadow: 0 1px 4px #20304480; }
+.brand-icon { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 12px; background: #ef8a34; font-size: 34px; font-weight: bold; }
+h1 { font-size: 27px; margin: 0; } .brand p { margin: 3px 0 0; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; }
+.form-card { width: min(100%, 620px); padding: 28px 32px; border-radius: 16px; background: rgba(255,255,255,.96); box-shadow: 0 15px 55px #10283f55; }
+h2 { font-size: 25px; margin: 0 0 6px; } .subtitle { margin: 0 0 24px; color: #627183; font-size: 14px; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.field { margin-bottom: 16px; } label { display: block; margin-bottom: 7px; font-weight: bold; font-size: 13px; }
+input:not([type="checkbox"]), select { width: 100%; padding: 12px; border: 1px solid #cad4df; border-radius: 8px; background: #fff; color: #203044; font: inherit; font-size: 14px; }
+input:focus, select:focus { outline: 2px solid #4c9ccf; outline-offset: 1px; }
+.password-wrap { display: flex; position: relative; } .password-wrap input { padding-right: 70px; }
+.eye-button { position: absolute; right: 5px; top: 5px; bottom: 5px; border: 0; border-radius: 6px; background: #eef4f9; padding: 0 10px; color: #1c5278; cursor: pointer; }
+small { display: block; color: #67788a; margin-top: 6px; line-height: 1.4; font-size: 11px; }
+.checkbox-line { display: flex; align-items: center; gap: 9px; margin: 5px 0 18px; }
+.checkbox-line input { width: 17px; height: 17px; accent-color: #155e8a; } .checkbox-line label { margin: 0; font-weight: normal; }
+.muted { color: #6c7a89; font-weight: normal; }
+.actions { display: flex; gap: 12px; margin-top: 20px; } .actions button { border-radius: 8px; padding: 13px; font-size: 14px; font-weight: bold; cursor: pointer; }
+.primary { flex: 2; background: #155e8a; color: white; border: 1px solid #155e8a; } .primary:hover { background: #104d72; }
+.secondary { flex: 1; background: white; color: #31506a; border: 1px solid #b9c9d5; }
+.success { padding: 13px; border-radius: 8px; margin: 16px 0 0; background: #e1f6e9; color: #176238; font-weight: bold; }
+footer { margin-top: 18px; color: white; text-shadow: 0 1px 4px #203044; font-size: 12px; }
+@media (max-width: 540px) { .form-card { padding: 22px 18px; } .two-col { grid-template-columns: 1fr; gap: 0; } h1 { font-size: 22px; } }

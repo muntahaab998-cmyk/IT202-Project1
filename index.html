@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moving On Up | Representative Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="brand"><div class="brand-icon" aria-hidden="true">↗</div><div><h1>Moving On Up</h1><p>Representative Portal</p></div></header>
+    <section class="form-card" aria-labelledby="form-title">
+      <h2 id="form-title">Welcome back</h2>
+      <p class="subtitle">Sign in to manage your moving clients and requests.</p>
+      <form id="representativeForm" novalidate>
+        <div class="two-col">
+          <div class="field"><label for="firstName">First name *</label><input id="firstName" name="firstName" type="text" autocomplete="given-name" placeholder="First name"></div>
+          <div class="field"><label for="lastName">Last name *</label><input id="lastName" name="lastName" type="text" autocomplete="family-name" placeholder="Last name"></div>
+        </div>
+        <div class="two-col">
+          <div class="field"><label for="repId">Representative ID *</label><input id="repId" name="repId" type="text" inputmode="numeric" maxlength="4" placeholder="4-digit ID"></div>
+          <div class="field"><label for="phone">Phone number and extension *</label><input id="phone" name="phone" type="tel" placeholder="555-123-4567 ext. 123"></div>
+        </div>
+        <div class="field"><label for="password">Password *</label><div class="password-wrap"><input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password"><button type="button" id="togglePassword" name="togglePassword" class="eye-button" aria-label="Show password" aria-pressed="false">Show</button></div><small>Up to 7 characters; starts with a special character and includes uppercase, a number, and a special character.</small></div>
+        <div class="checkbox-line"><input id="emailConfirmation" name="emailConfirmation" type="checkbox"><label for="emailConfirmation">Client needs an email confirmation</label></div>
+        <div class="field"><label for="email">Representative email <span class="muted">(required for email confirmation)</span></label><input id="email" name="email" type="email" placeholder="name@example.com"></div>
+        <div class="field"><label for="transaction">Transaction type *</label><select id="transaction" name="transaction"><option value="">Select a transaction</option><option value="Search client account">Search client account</option><option value="Book a moving event">Book a moving event</option><option value="Cancel a moving event">Cancel a moving event</option><option value="View moving services required">View moving services required</option><option value="Request additional moving services">Request additional moving services</option><option value="Create a new client account">Create a new client account</option></select></div>
+        <div class="actions"><button id="submitButton" name="submitButton" class="primary" type="submit">Submit request</button><button id="resetButton" name="resetButton" class="secondary" type="reset">Reset</button></div>
+      </form>
+      <p id="successMessage" class="success" role="status" aria-live="polite" hidden></p>
+    </section>
+    <footer>Moving On Up • Making every move easier</footer>
+  </main>
+</body>
+</html>
